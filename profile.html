@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        *{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #1B1E23;
+    color: white;
+}
+
+.jumbotron {
+    padding: 2px;
+    background-color: #063970;
+    text-align: center;
+}
+
+#content{
+    flex: 5;
+}
+
+@media screen and (max-width: 50px) {
+    #content {
+        width: 20%;
+        padding: 0;
+    }
+}
+
+main{
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+main .profile{
+    align-content: center;
+    text-align: center;
+}
+
+img{
+    width: 30%;
+    border-radius: 100%;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #063970;
+    font-weight: bold;
+    align-content: center;
+    text-align: center;
+}
+
+footer p{
+    font-size: larger;
+}
+
+footer .social a{
+    margin: 20px;
+    opacity: 0.75;
+}
+
+footer .social a:hover{
+    opacity: 1;
+}
+
+footer .social a img{
+    width: 100px;
+}
+    </style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>My Profile App</title>
+	    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="jumbotron">
+                <h2>My Profile App</h2>
+            </div>
+        </header>
+        <main>
+            <div class="profile">
+                <div class="pic">
+                    <img src="./ava.jpeg">
+                </div>
+                <div class="desc">
+                    <h2>Nazwa Anandia</h2>
+                    <p>Junior Cloud Engineer</p>
+                </div>
+            </div>
+            <div class="inf">
+                <div class="my">
+                    <h4>My Story</h4>
+                    <p>Hello everyone, My name is Nazwa Anandia. I'm a Junior Cloud Engineer. <br>
+                        I became a cloud engineer since 2023. I studying about cloud computing <br>
+                        at Bangkit Academy. Bangkit Academy is a program that is help collage <br>
+                        student to learn about Information Technology.</p>
+                    <p>Bangkit have several learning path. In Bangkit Academy 2023 batch 1, <br>
+                        Bangkit have 3 learning path. There is Mobile Development, Machine <br>
+                        Learning, and Cloud Computing.</p>
+                </div>
+                <div class="pers">
+                    <h4>My Personal Information</h4>
+                    <table>
+                        <tr>
+                            <td>Age:</td>
+                            <th>20</th>
+                        </tr>
+                        <tr>
+                            <td>Phone:</td>
+                            <th>089636236725</th>
+                        </tr>
+                        <tr>
+                            <td>Email:</td>
+                            <th>nazwa.anandia@gmail.com</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>Find Me In!</p>
+            <div class="social">
+                <a href="Github"><img src="./github.png"></img></a>
+                <a href="LinkedIn"><img src="./linked.png"></img></a>
+                <a href="Twitter"><img src="./twitter.png"></img></a>
+            </div>
+            &copy; 2023, Nazwa Anandia
+        </footer>
+    </body>
+</html>
